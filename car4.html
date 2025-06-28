@@ -1,0 +1,177 @@
+
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Akshaya Devu</title>
+  <link rel="stylesheet" href="car2.css">
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    .about-section {
+
+      padding: 8rem 5% 3rem;
+      min-height: 100vh;
+      background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.9), rgba(22, 22, 22, 0.9));
+      background-blend-mode: color-burn;
+        background-attachment: fixed;
+      background-size: cover;
+
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+/*******  f9403b18-c90a-46bc-92aa-2ede335b4cb8  *******/
+    .about-section h1 {
+      font-size: 2.5rem;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serifS;
+      color: #564f6f;
+     text-shadow: #020203 1.5px 1px 2px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    .about-section img {
+      width: 160px;
+      height: 160px;
+      border-radius: 25%;
+      object-fit: keep-up;
+      border: 4px ;
+      color: #564f6f;
+      margin-bottom: 4rem;
+      animation: zoomIn 1.2s both;
+    }
+    .about-section p, .education {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 850px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    .education {
+      margin-top: 2rem;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-shadow: #020203 1.5px 1px 2px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #564f6f;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: left;
+    }
+    .education h2 {
+      color: #564f6f;
+      font-size: 1.8rem;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-shadow: #020203 1px 1px 2px;
+      margin-bottom: 1rem;
+    }
+    .education ul {
+      list-style-type: square;
+      font: 1em sans-serif;
+      text-shadow: #020203 1.5px 1px 2px;
+      padding-left: 1.2rem;
+    }
+    .education li {
+      margin-bottom: 0.8rem;
+    }
+    @keyframes fadeInDown {
+      0% {opacity: 0; transform: translateY(-30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes zoomIn {
+      0% {opacity: 0; transform: scale(0.8);}
+      100% {opacity: 1; transform: scale(1);}
+    }
+    @media (max-width: 768px) {
+      .about-section h1 {
+        font-size: 2.2rem;
+      }
+      .about-section p {
+        font-size: 1rem;
+      }
+       .social-links {
+      display: inline-flex;
+      justify-content: left;
+      
+      color: #584f54;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      animation: fadeInUp 1.3s ease-in-out;
+    }
+    .social-links a {
+      color: #564f6f;
+      font-size: 1.8rem;
+      transition: transform 0.3s;
+    }
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #584f54;
+    }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Portfo<span>lio</span></div>
+    <nav>
+      <a href="car1.html">Home</a>
+      <a href="car4.html">About Us</a>
+      <a href="#">Services</a>
+      <a href="#">Skills</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <button class="subscribe">Subscribe</button>
+  </header>
+  <section class="about-section">
+    <img src="the-night-district-4y-1920x1200.jpg" alt="Profile Picture" />
+    <h1>About Me</h1>
+    <p>
+      Hi! I'm Akshaya Devu, a dedicated student from MGIT with a deep passion for technology, AI, and robotics.
+      I aspire to become a successful software engineer, build my own tech company, and uplift society through innovation.
+      I love solving real-world problems and turning ideas into impact.
+    </p>
+    <div class="education">
+      <h2>My Education & Qualifications</h2>
+      <ul>
+        <li><strong>Bachelor of Technology (B.Tech) in Computer Science and Business Systems</strong> — MGIT, Hyderabad</li>
+        <li>Completed Diploma in Artificial intelligence and Machine Learning in 2025 at Samskruti College of Engineering & technology</li>
+        <li>10th Grade — Secured Top Scores, Passionate about Math & Science</li>
+        <li>Courses: AI, computer vision, Full Stack Web Development, Data Structures, JavaScript, Python</li>
+        <li>Certifications: Responsive Web Design (freeCodeCamp), AI Bootcamp, Robotics Workshop</li>
+      </ul>
+    </div>
+    <div class="social-links">
+        <p>Connect with me:</p>
+      <a href="https://www.linkedin.com/in/akshaya-devu-3ba319308/" target="https://www.linkedin.com/in/akshaya-devu-3ba319308/" title="LinkedIn">
+        <img src="download.png" alt="LinkedIn Logo" style="width: 24px; height: 24px;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+     
+      <a href="https://github.com/Akshayadevu" target="https://github.com/Akshayadevu" title="GitHub">
+        <i class="fab fa-github"></i>
+        <img src="download (1).png" alt="GitHub Logo" style="width: 24px; height: 24px;">
+         
+      </a>
+      <a href="mailto:youremail@example.com" title="Email">
+        <i class="fas fa-envelope"></i>
+  </section>
+</body>
+</html>
+<script>
+  function subscribe() {
+    const emailInput = document.querySelector('.email-form input');
+    const email = emailInput.value;
+    if (email) {
+      alert(`Thank you for subscribing with ${email}!`);
+      emailInput.value = ''; // Clear the input field
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  }

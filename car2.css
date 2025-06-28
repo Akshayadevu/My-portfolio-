@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #2d283e;
+  color: #f3f3f3;
+  overflow-x: scroll;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+.logo {
+  font-size: 1.5rem;
+  color: white;
+}
+.logo span {
+  color: #564f6f;
+}
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #564f6f
+}
+.subscribe {
+  background: #564f6f;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.subscribe:hover {
+  transform: scale(1.05);
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 0 5%;
+  padding-top: 6rem;
+  background: linear-gradient(to right, rgba(1, 0, 1, 0.85), transparent);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  transition: background-position 0.5s ease-in-out;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.hero h1 span {
+  color: #564f6f;
+}
+.hero p {
+  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+}
+.email-form {
+  display: flex;
+  background: white;
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(255, 242, 242, 0.1);
+}
+.email-form input {
+  border: none;
+  padding: 0.8rem 1rem;
+  flex: 1;
+  outline: none;
+}
+.email-form button {
+  background: #564f6f;
+  border: none;
+  color: white;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.email-form button:hover {
+  background: #8075a4;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    padding-top: 8rem;
+    background-position: center;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  nav {
+    margin-top: 1rem;
+  }
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .span {
+    color: #ab2669;
+  }
+}
